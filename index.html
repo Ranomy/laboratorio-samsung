@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Crear cuenta</title>
+  </head>
+  <body>
+    <div class="contenedor-formulario">
+      <form action="#" class="formulario" id="formulario">
+        <h2>Create Account</h2>
+        <!--Campo nombre-->
+        <div class="grupo-formulario-input">
+          <label for="nombre" class="formulario-label">Nombre</label>
+          <div class="campo-input-img">
+            <input type="text" class="formulario-input" id="nombre" />
+            <img
+              src="/imagen/error-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCruzNombre"
+              alt="simbolo error"
+            />
+            <img
+              src="/imagen/success-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCheckNombre"
+              alt="simbolo correcto"
+            />
+          </div>
+          <div class="mensaje-error"></div>
+        </div>
+        <!--Campo email-->
+        <div class="grupo-formulario-input">
+          <label for="email" class="formulario-label">Email</label>
+          <div class="campo-input-img">
+            <input type="email" class="formulario-input" id="email" />
+            <img
+              src="/imagen/error-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCruzEmail"
+              alt="simbolo error"
+            />
+            <img
+              src="/imagen/success-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCheckEmail"
+              alt="simbolo correcto"
+            />
+          </div>
+          <div class="mensaje-error"></div>
+        </div>
+        <!--Campo Clave-->
+        <div class="grupo-formulario-input">
+          <label for="clave" class="formulario-label">Clave</label>
+          <div class="campo-input-img">
+            <input type="password" class="formulario-input" id="clave" />
+            <img
+              src="/imagen/error-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCruzClave"
+              alt="simbolo error"
+            />
+            <img
+              src="/imagen/success-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCheckClave"
+              alt="simbolo correcto"
+            />
+          </div>
+          <div class="mensaje-error" id="mensaje-Error"></div>
+        </div>
+        <!--Campo Confirmar Clave-->
+        <div class="grupo-formulario-input">
+          <label for="clave2" class="formulario-label">Confirme su clave</label>
+          <div class="campo-input-img">
+            <input type="password" class="formulario-input" id="clave2" />
+            <img
+              src="/imagen/error-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCruzClave2"
+              alt="simbolo error"
+            />
+            <img
+              src="/imagen/success-icon.svg"
+              class="formulario-imagen hidden"
+              id="imagenCheckClave2"
+              alt="simbolo correcto"
+            />
+          </div>
+          <div class="mensaje-error"></div>
+          <!--Botón Enviar-->
+          <button type="submit" class="boton-enviar" id="botonEnviar">
+            ENVIAR
+          </button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
